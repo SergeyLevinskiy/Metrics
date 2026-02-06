@@ -7,6 +7,7 @@ body{
     font-family: "Manrope";
     text-align: left;
     letter-spacing: -0.03em;
+    box-sizing: border-box;
 }
 .section-white {
     background-color: #fff;
@@ -20,18 +21,14 @@ body{
     width: 1150px;
     margin: 0 auto;
 }
-a {
-    line-height: 100%;
-}
 h1 {
     font-size: 60px;
     line-height: 60px;
-    margin: 10px 10px 50px 10px;
+    margin: 25px 0 30px 0;
 }
 h2 {
     font-weight: 400;
     font-size: 45px;
-    margin: 10px 10px 50px 10px;
 }
 h3 {
     font-size: 30px;
@@ -60,16 +57,13 @@ header {
 }
 .nav a {
     color: #121212;
-    margin: 0 0 10px 50px;
+    margin-left: 60px;
 }
 .nav a:hover {
     opacity: 50%;
 }
 header .nav a:hover {
     border-bottom: 1px solid #00000050;
-}
-.hero{
-    margin-bottom: 150px;
 }
 .hero-text {
     display: flex;
@@ -103,13 +97,16 @@ header .nav a:hover {
     color: #AD1818;
     border: 1px solid #AD1818;
 }
+#about h2 {
+    margin-bottom: 30px;
+}
 
 /* section */
 section  {
     margin-bottom: 150px;
 }
 section  .section-label {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 section  button {
     display: flex;
@@ -139,6 +136,7 @@ section  button:active {
     margin-bottom: 15px;
 }
 .project a {
+    font-size: 20px;
     color: #AD1818;
 }
 .project a::after {
@@ -146,7 +144,9 @@ section  button:active {
 }
 
 /* services*/
-
+#services {
+    padding-top: 150px;
+}
 .service {
     height: 326px;
     margin-bottom: 60px;
@@ -194,7 +194,7 @@ section  button:active {
 .contacts h3 {
     font-size: 18px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .contacts h3::before {
     content: "";
@@ -239,4 +239,5 @@ footer .section-label{
     margin: 0;
     color: #fff;  
 }
+
 
