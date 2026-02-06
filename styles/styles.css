@@ -4,14 +4,24 @@ html {
 body{
     width: 1400px;
     margin: 0 auto;
-    background-color: #fff;
     font-family: "Manrope";
     text-align: left;
     letter-spacing: -0.03em;
 }
+.section-white {
+    background-color: #fff;
+    color: #121212;
+}
+.section-black {
+    background-color:#121212;
+    color: #fff;
+}
 .container {
     width: 1150px;
     margin: 0 auto;
+}
+a {
+    line-height: 100%;
 }
 h1 {
     font-size: 60px;
@@ -36,10 +46,16 @@ p {
 
 /* header*/
 header {
-    display: flex;
-    margin: 0 125px;
-    margin: 33px 0 70px 0;
+    background-color: #fff;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
     height: 25px;
+    padding-top: 33px;
+    padding-bottom: 70px;
+}
+.header {
+    display: flex;
     justify-content: space-between;
 }
 .nav a {
@@ -89,11 +105,26 @@ header .nav a:hover {
 }
 
 /* section */
-.section  {
+section  {
     margin-bottom: 150px;
 }
-.section  .section-label {
+section  .section-label {
     margin-bottom: 40px;
+}
+section  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 153px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #AD1818;
+    border: 1px solid #AD1818;
+}
+section  button:active {
+    background-color: #AD1818;
+    color: #fff;
 }
 .project {
     margin-bottom: 90px;
@@ -110,36 +141,16 @@ header .nav a:hover {
 .project a {
     color: #AD1818;
 }
-.section  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 153px;
-    border-radius: 5px;
-    font-size: 30px;
-    color: #AD1818;
-    border: 1px solid #AD1818;
-}
-.section  button:active {
-    background-color: #AD1818;
-    color: #fff;
-}
+
 
 /* services*/
-#services, #example {
-    background-color: #121212;
-    color: #fff;
-    margin: 0 -125px;
-    padding: 0 125px;
-}
-#services {
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
+
 .service {
     height: 326px;
     margin-bottom: 60px;
+}
+.service:nth-last-child(1) {
+    margin-bottom: 0;
 }
 .service img{
     width: 100%;
@@ -149,19 +160,17 @@ header .nav a:hover {
 }
 
 /* example*/
-#example {
+.section-img {
     display: flex;
     height: 717px;
-    margin: 0 -125px;
     background-image: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4) ),url(../image/example.png);
-    background-color: #121212;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     align-items: flex-end;
 }
 
-#example h3 {
+.section-img h3 {
     width: 443px;
     margin-bottom: 60px;
 }
@@ -197,14 +206,12 @@ header .nav a:hover {
 }
 
 /* footer*/
-footer {
+.footer {
     display: flex;
     flex-direction: column; 
     justify-content: space-evenly; 
     align-items: center;
     height: 230px;
-    margin: 0 -125px;
-    background-color: #121212;  
 }
 footer .sign p {
     display: flex;
@@ -212,7 +219,7 @@ footer .sign p {
     color: #fff;
     opacity: 50%;
 }
-.footer {
+footer .section-label{
     width: 450px;
     display: flex;
     justify-content: space-between;
