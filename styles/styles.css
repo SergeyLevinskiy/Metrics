@@ -595,9 +595,6 @@ footer a:hover {
     .burger-btn {
         display: block;
     }
-    .burger-btn_open::before {
-        top: 20px;
-    }
     .hero_text p {
         margin: 30px 40px;
     }
@@ -605,8 +602,8 @@ footer a:hover {
         padding: 120px 0;
     }
     .boxes_wrapper {
-    gap: 10px;
-    margin-bottom: 80px;
+	    gap: 10px;
+	    margin-bottom: 80px;
     }
     .box_service {
         width: calc(50% - 5px);
@@ -820,6 +817,7 @@ footer a:hover {
         padding: 5px 15px;
     }
 }
+
 
 
 
