@@ -678,6 +678,10 @@ footer a:hover {
     .burger-btn {
         display: block;
     }
+	.burger-btn::before,
+	.burger-btn::after{
+		right: 10px;
+    }
     .burger-btn_open::before,
 	.burger-btn_open::after{
         top: 17px;
@@ -816,6 +820,7 @@ footer a:hover {
         padding: 5px 15px;
     }
 }
+
 
 
 
